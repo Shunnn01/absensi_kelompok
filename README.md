@@ -126,7 +126,7 @@ npm run dev
 * Untuk admin panel : `http://localhost:8000/admin`
 * Kredensial user awal dapat ditambahkan melalui seeder atau register manual
 
-🧪 Akun Demo (Seeder Default)
+##🧪 Akun Demo (Seeder Default)
 Admin
 Email: admin@gmail.com
 Password: admin123
