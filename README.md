@@ -1,94 +1,95 @@
-📋 Absensi Kelompok
-Absensi Kelompok adalah aplikasi web berbasis Laravel yang digunakan untuk mencatat kehadiran anggota kelompok secara efisien. Aplikasi ini dilengkapi dengan fitur modern dan menggunakan Filament Admin Panel untuk mempermudah pengelolaan data oleh admin.
 
-✨ Fitur Utama
-🧑‍💼 Login dan autentikasi pengguna
 
-📅 Pencatatan dan pemantauan kehadiran anggota
+---
 
-📊 Dashboard admin menggunakan Filament v3
+# 📋 Absensi Kelompok
 
-📁 Laporan dan data absensi
+**Absensi Kelompok** adalah aplikasi web berbasis Laravel yang digunakan untuk mencatat kehadiran anggota kelompok secara efisien. Aplikasi ini dilengkapi dengan fitur modern dan menggunakan Filament Admin Panel untuk mempermudah pengelolaan data oleh admin.
 
-⚙️ Pengaturan pengguna & peran (admin/user)
+## ✨ Fitur Utama
 
-💡 Tampilan modern dengan TailwindCSS
+* 🧑‍💼 Login dan autentikasi pengguna
+* 📅 Pencatatan dan pemantauan kehadiran anggota
+* 📊 Dashboard admin menggunakan Filament v3
+* 📁 Laporan dan data absensi
+* ⚙️ Pengaturan pengguna & peran (admin/user)
+* 💡 Tampilan modern dengan TailwindCSS
 
-🛠️ Teknologi dan Versi
-Framework: Laravel 12.x
+## 🛠️ Teknologi dan Versi
 
-PHP: ^8.2
+* **Framework**: Laravel 12.x
+* **PHP**: ^8.2
+* **Admin Panel**: Filament v3.3
+* **Frontend**: TailwindCSS 4 + Vite
+* **Database**: MySQL (via Laravel)
+* **Package Manager**: Composer & NPM
 
-Admin Panel: Filament v3.3
+## 🧭 Alur Penggunaan
 
-Frontend: TailwindCSS 4 + Vite
+1. Admin login dan mengelola data pengguna serta absensi.
+2. User login dan mencatat kehadiran sesuai jadwal.
+3. Admin memonitor laporan melalui dashboard Filament.
 
-Database: MySQL (via Laravel)
+## 🖥️ Cara Menjalankan Aplikasi
 
-Package Manager: Composer & NPM
+### 1. Clone Repo
 
-🧭 Alur Penggunaan
-Admin login dan mengelola data pengguna serta absensi.
-
-User login dan mencatat kehadiran sesuai jadwal.
-
-Admin memonitor laporan melalui dashboard Filament.
-
-🖥️ Cara Menjalankan Aplikasi
-1. Clone Repo
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/Shunnn01/absensi_kelompok.git
 cd absensi_kelompok
-2. Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install Dependencies
+
+```bash
 composer install
 npm install
-3. Setup Environment
-bash
-Copy
-Edit
+```
+
+### 3. Setup Environment
+
+```bash
 cp .env.example .env
 php artisan key:generate
-Ubah konfigurasi .env sesuai kredensial database lokal Anda.
+```
 
-4. Jalankan Migrasi & Seeder (opsional)
-bash
-Copy
-Edit
+Ubah konfigurasi `.env` sesuai kredensial database lokal Anda.
+
+### 4. Jalankan Migrasi & Seeder (opsional)
+
+```bash
 php artisan migrate --seed
-5. Jalankan Server
-bash
-Copy
-Edit
+```
+
+### 5. Jalankan Server
+
+```bash
 php artisan serve
-6. Jalankan Dev Server Frontend (jika diperlukan)
-bash
-Copy
-Edit
+```
+
+### 6. Jalankan Dev Server Frontend (jika diperlukan)
+
+```bash
 npm run dev
-🔑 Akses Aplikasi
-Akses via browser di: http://localhost:8000
+```
 
-Untuk admin panel Filament: http://localhost:8000/admin
+## 🔑 Akses Aplikasi
 
-Kredensial user awal dapat ditambahkan melalui seeder atau register manual
+* Akses via browser di: `http://localhost:8000`
+* Untuk admin panel Filament: `http://localhost:8000/admin`
+* Kredensial user awal dapat ditambahkan melalui seeder atau register manual
 
-🗂️ Struktur Folder Penting
-app/: Logika aplikasi
+## 🗂️ Struktur Folder Penting
 
-resources/views/: Blade views
+* `app/`: Logika aplikasi
+* `resources/views/`: Blade views
+* `routes/web.php`: Routing web
+* `database/migrations/`: Struktur database
+* `public/`: Aset publik dan index utama
+* `config/`: Konfigurasi Laravel
 
-routes/web.php: Routing web
+## 📄 Lisensi
 
-database/migrations/: Struktur database
+Proyek ini menggunakan lisensi [MIT](LICENSE).
 
-public/: Aset publik dan index utama
 
-config/: Konfigurasi Laravel
-
-📄 Lisensi
-Proyek ini menggunakan lisensi MIT.
