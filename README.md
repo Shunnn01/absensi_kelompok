@@ -59,12 +59,24 @@ Validasi akses halaman penting.
 * **Database**: MySQL (via Laravel)
 * **Package Manager**: Composer & NPM
 
-## 🧭 Alur Penggunaan
+## 🔑 Alur Akses Aplikasi
+Akses Aplikasi di http://localhost:8000
 
-1. Admin login dan mengelola data pengguna serta absensi.
-2. User login dan mencatat kehadiran sesuai jadwal.
-3. Admin memonitor laporan melalui dashboard Filament.
+Registrasi Akun baru sebagai pengguna (bisa dibatasi hanya oleh admin).
 
+Login menggunakan email dan password yang sudah terdaftar.
+
+Setelah login:
+
+Pengguna biasa akan diarahkan ke halaman pengisian absensi.
+
+Admin akan diarahkan ke dashboard admin untuk:
+
+Mengelola pengguna (tambah/edit/hapus)
+
+Melihat dan mengelola data absensi seluruh pengguna
+
+Pengguna bisa melihat riwayat absensi dan status kehadiran sebelumnya.
 ## 🖥️ Cara Menjalankan Aplikasi
 
 ### 1. Clone Repo
@@ -111,8 +123,16 @@ npm run dev
 ## 🔑 Akses Aplikasi
 
 * Akses via browser di: `http://localhost:8000`
-* Untuk admin panel Filament: `http://localhost:8000/admin`
+* Untuk admin panel : `http://localhost:8000/admin`
 * Kredensial user awal dapat ditambahkan melalui seeder atau register manual
+
+🧪 Akun Demo (Seeder Default)
+Admin
+Email: admin@gmail.com
+Password: admin123
+User
+(bisa langsung buat sendiri)
+
 
 ## 🗂️ Struktur Folder Penting
 
