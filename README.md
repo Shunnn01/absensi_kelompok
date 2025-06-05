@@ -130,6 +130,7 @@ npm run dev
 Admin
 Email: admin@gmail.com
 Password: admin123
+
 User
 (bisa langsung buat sendiri)
 
