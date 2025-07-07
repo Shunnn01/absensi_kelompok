@@ -7,29 +7,76 @@
 **Absensi Kelompok** adalah aplikasi web berbasis Laravel yang digunakan untuk mencatat kehadiran anggota kelompok secara efisien. Aplikasi ini dilengkapi dengan fitur modern dan menggunakan Filament Admin Panel untuk mempermudah pengelolaan data oleh admin.
 
 ## ✨ Fitur Utama
+Berikut adalah fitur-fitur yang tersedia dalam aplikasi Absensi Kelompok:
 
-* 🧑‍💼 Login dan autentikasi pengguna
-* 📅 Pencatatan dan pemantauan kehadiran anggota
-* 📊 Dashboard admin menggunakan Filament v3
-* 📁 Laporan dan data absensi
-* ⚙️ Pengaturan pengguna & peran (admin/user)
-* 💡 Tampilan modern dengan TailwindCSS
+✅ 1. Autentikasi Pengguna
+Login, registrasi, dan logout berbasis Laravel Auth.
+
+Perlindungan halaman dengan middleware (auth).
+
+Sistem peran (admin dan user) untuk membedakan hak akses.
+
+📋 2. Manajemen Data Absensi
+Pengguna dapat mencatat kehadiran (hadir/tidak hadir).
+
+Data kehadiran disimpan secara otomatis dengan waktu dan tanggal.
+
+Riwayat kehadiran dapat dilihat oleh masing-masing user.
+
+🛠️ 3. Dashboard Admin 
+Admin dapat melihat rekap kehadiran semua pengguna.
+
+Fitur pencarian, penyaringan, dan pengurutan data.
+
+Manajemen pengguna: tambah, edit, hapus akun pengguna.
+
+📊 4. Statistik Kehadiran
+Visualisasi grafik atau tabel rekap absensi.
+
+Persentase kehadiran tiap user.
+
+Export data kehadiran (opsional, bisa ditambahkan dengan plugin).
+
+🔔 5. Notifikasi
+Sistem pengingat untuk mengisi absensi (bisa dikembangkan lebih lanjut via email atau notifikasi sistem).
+
+Flash messages untuk aksi berhasil/gagal (misalnya saat login atau mengisi absensi).
+
+💼 6. Role & Permission
+Admin memiliki akses penuh ke seluruh sistem.
+
+User hanya bisa mencatat dan melihat data mereka sendiri.
+
+Validasi akses halaman penting.
+
+
 
 ## 🛠️ Teknologi dan Versi
 
 * **Framework**: Laravel 12.x
 * **PHP**: ^8.2
-* **Admin Panel**: Filament v3.3
 * **Frontend**: TailwindCSS 4 + Vite
 * **Database**: MySQL (via Laravel)
 * **Package Manager**: Composer & NPM
 
-## 🧭 Alur Penggunaan
+## 🔑 Alur Akses Aplikasi
+Akses Aplikasi di http://localhost:8000
 
-1. Admin login dan mengelola data pengguna serta absensi.
-2. User login dan mencatat kehadiran sesuai jadwal.
-3. Admin memonitor laporan melalui dashboard Filament.
+Registrasi Akun baru sebagai pengguna (bisa dibatasi hanya oleh admin).
 
+Login menggunakan email dan password yang sudah terdaftar.
+
+Setelah login:
+
+Pengguna biasa akan diarahkan ke halaman pengisian absensi.
+
+Admin akan diarahkan ke dashboard admin untuk:
+
+Mengelola pengguna (tambah/edit/hapus)
+
+Melihat dan mengelola data absensi seluruh pengguna
+
+Pengguna bisa melihat riwayat absensi dan status kehadiran sebelumnya.
 ## 🖥️ Cara Menjalankan Aplikasi
 
 ### 1. Clone Repo
@@ -76,8 +123,17 @@ npm run dev
 ## 🔑 Akses Aplikasi
 
 * Akses via browser di: `http://localhost:8000`
-* Untuk admin panel Filament: `http://localhost:8000/admin`
+* Untuk admin panel : `http://localhost:8000/admin`
 * Kredensial user awal dapat ditambahkan melalui seeder atau register manual
+
+## 🧪 Akun Demo (Seeder Default)
+Admin
+Email: admin@gmail.com
+Password: admin123
+
+User
+(bisa langsung buat sendiri)
+
 
 ## 🗂️ Struktur Folder Penting
 
